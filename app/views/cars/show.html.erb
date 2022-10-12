@@ -11,6 +11,14 @@
         <p>Year of production:</p>
         <h3><%= @car.year_of_production %></h3>
       </article>
+    </div class="col-12 col-lg-6">
+      <div class="d-flex review pt-3">
+        <% @reviews.each do |review| %>
+        <p class="star">⭐ <%= review.rating %></p>
+        <p class="rev-content"><%= review.content %></p>
+        <% end %>
+      </div>
+    <div>
     </div>
     <div class="col-12 col-lg-5">
       <aside class="bloc-form">
