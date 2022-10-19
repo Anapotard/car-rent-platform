@@ -13,7 +13,7 @@
       </article>
     </div class="col-12 col-lg-6">
       <div class="d-flex review pt-3">
-        <% @reviews.each do |review| %>
+        <% @car.reviews.each do |review| %>
         <p class="star">⭐ <%= review.rating %></p>
         <p class="rev-content"><%= review.content %></p>
         <% end %>
